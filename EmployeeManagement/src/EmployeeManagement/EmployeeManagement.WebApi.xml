@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeManagement</name>
+    </assembly>
+    <members>
+        <member name="M:EmployeeManagement.Controllers.v1.ClientsController.GetClients(EmployeeManagement.Domain.Clients.Dtos.ClientParametersDto)">
+            <summary>
+            Gets a list of all Clients.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ClientsController.GetClient(System.Guid)">
+            <summary>
+            Gets a single Client by ID.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ClientsController.AddClient(EmployeeManagement.Domain.Clients.Dtos.ClientForCreationDto)">
+            <summary>
+            Creates a new Client record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ClientsController.UpdateClient(System.Guid,EmployeeManagement.Domain.Clients.Dtos.ClientForUpdateDto)">
+            <summary>
+            Updates an entire existing Client.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ClientsController.DeleteClient(System.Guid)">
+            <summary>
+            Deletes an existing Client record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.EmployeesController.GetEmployees(EmployeeManagement.Domain.Employees.Dtos.EmployeeParametersDto)">
+            <summary>
+            Gets a list of all Employees.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.EmployeesController.GetEmployee(System.Guid)">
+            <summary>
+            Gets a single Employee by ID.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.EmployeesController.AddEmployee(EmployeeManagement.Domain.Employees.Dtos.EmployeeForCreationDto)">
+            <summary>
+            Creates a new Employee record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.EmployeesController.UpdateEmployee(System.Guid,EmployeeManagement.Domain.Employees.Dtos.EmployeeForUpdateDto)">
+            <summary>
+            Updates an entire existing Employee.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.EmployeesController.DeleteEmployee(System.Guid)">
+            <summary>
+            Deletes an existing Employee record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ItemsController.GetItems(EmployeeManagement.Domain.Items.Dtos.ItemParametersDto)">
+            <summary>
+            Gets a list of all Items.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ItemsController.GetItem(System.Guid)">
+            <summary>
+            Gets a single Item by ID.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ItemsController.AddItem(EmployeeManagement.Domain.Items.Dtos.ItemForCreationDto)">
+            <summary>
+            Creates a new Item record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ItemsController.UpdateItem(System.Guid,EmployeeManagement.Domain.Items.Dtos.ItemForUpdateDto)">
+            <summary>
+            Updates an entire existing Item.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ItemsController.DeleteItem(System.Guid)">
+            <summary>
+            Deletes an existing Item record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ProjectsController.GetProjects(EmployeeManagement.Domain.Projects.Dtos.ProjectParametersDto)">
+            <summary>
+            Gets a list of all Projects.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ProjectsController.GetProject(System.Guid)">
+            <summary>
+            Gets a single Project by ID.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ProjectsController.AddProject(EmployeeManagement.Domain.Projects.Dtos.ProjectForCreationDto)">
+            <summary>
+            Creates a new Project record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ProjectsController.UpdateProject(System.Guid,EmployeeManagement.Domain.Projects.Dtos.ProjectForUpdateDto)">
+            <summary>
+            Updates an entire existing Project.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Controllers.v1.ProjectsController.DeleteProject(System.Guid)">
+            <summary>
+            Deletes an existing Project record.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Databases.EntityConfigurations.ClientConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{EmployeeManagement.Domain.Clients.Client})">
+            <summary>
+            The database configuration for Clients. 
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Databases.EntityConfigurations.EmployeeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{EmployeeManagement.Domain.Employees.Employee})">
+            <summary>
+            The database configuration for Employees. 
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Databases.EntityConfigurations.ItemConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{EmployeeManagement.Domain.Items.Item})">
+            <summary>
+            The database configuration for Items. 
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Databases.EntityConfigurations.ProjectConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{EmployeeManagement.Domain.Projects.Project})">
+            <summary>
+            The database configuration for Projects. 
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Databases.EntityConfigurations.UserConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{EmployeeManagement.Domain.Users.User})">
+            <summary>
+            The database configuration for Users. 
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Databases.EntityConfigurations.UserProfileConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{EmployeeManagement.Domain.UserProfiles.UserProfile})">
+            <summary>
+            The database configuration for UserProfiles. 
+            </summary>
+        </member>
+        <member name="P:EmployeeManagement.Domain.Addresses.Address.Line1">
+            <summary>
+            Address line 1 (e.g., street, PO Box, or company name).
+            </summary>
+        </member>
+        <member name="P:EmployeeManagement.Domain.Addresses.Address.Line2">
+            <summary>
+            Address line 2 (e.g., apartment, suite, unit, or building).
+            </summary>
+        </member>
+        <member name="P:EmployeeManagement.Domain.Addresses.Address.City">
+            <summary>
+            City, district, suburb, town, or village.
+            </summary>
+        </member>
+        <member name="P:EmployeeManagement.Domain.Addresses.Address.State">
+            <summary>
+            State, county, province, or region.
+            </summary>
+        </member>
+        <member name="P:EmployeeManagement.Domain.Addresses.Address.PostalCode">
+            <summary>
+            ZIP or postal code.
+            </summary>
+        </member>
+        <member name="P:EmployeeManagement.Domain.Addresses.Address.Country">
+            <summary>
+            Two-letter country code <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2">(ISO 3166-1 alpha-2)</a>.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Extensions.Services.WebAppServiceConfiguration.AddBoundaryServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly[])">
+            <summary>
+            Registers all services in the assembly of the given interface.
+            </summary>
+        </member>
+    </members>
+</doc>
