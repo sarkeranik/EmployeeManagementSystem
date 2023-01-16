@@ -1,0 +1,222 @@
+{
+  "DomainName": "EmployeeManagementSystem",
+  "BoundedContexts": [
+    {
+      "ProjectName": "EmployeeManagement",
+      "Port": 5005,
+      "DbContext": {
+        "ContextName": "EmployeesDbContext",
+        "DatabaseName": "EmployeesManagement",
+        "Provider": "SqlServer"
+      },
+      "Entities": [
+        {
+          "Name": "User",
+          "Plural": "Users",
+          "Properties": [
+            {
+              "Name": "Name",
+              "Type": "string"
+            },
+            {
+              "Name": "UserProfileId",
+              "Type": "Guid?",
+              "ForeignEntityName": "UserProfile",
+              "ForeignEntityPlural": "UserProfiles"
+            }
+          ]
+        },
+        {
+          "Name": "UserProfile",
+          "Plural": "UserProfiles",
+          "Properties": [
+            {
+              "Name": "Name",
+              "Type": "string"
+            },
+            {
+              "Name": "UserId",
+              "Type": "Guid",
+              "ForeignEntityName": "User",
+              "ForeignEntityPlural": "Users"
+            }
+          ]
+        },
+        {
+          "Name": "Project",
+          "Plural": "Projects",
+          "Properties": [
+            {
+              "Name": "Name",
+              "Type": "string",
+              "CanFilter": true,
+              "CanSort": true
+            },
+            {
+              "Name": "Description",
+              "Type": "string"
+            }
+          ],
+          "Features": [
+            {
+              "Type": "GetList"
+            },
+            {
+              "Type": "GetRecord"
+            },
+            {
+              "Type": "AddRecord"
+            },
+            {
+              "Type": "UpdateRecord"
+            },
+            {
+              "Type": "DeleteRecord"
+            }
+          ]
+        },
+        {
+          "Name": "Client",
+          "Plural": "Clients",
+          "Properties": [
+            {
+              "Name": "Name",
+              "Type": "string",
+              "CanFilter": true,
+              "CanSort": true
+            },
+            {
+              "Name": "Address",
+              "Type": "string",
+              "CanFilter": true,
+              "CanSort": true
+            },
+            {
+              "Name": "ProjectId",
+              "Type": "Guid?",
+              "ForeignEntityName": "Project",
+              "ForeignEntityPlural": "Projects",
+              "CanFilter": true,
+              "CanSort": true
+            }
+          ],
+          "Features": [
+            {
+              "Type": "GetList"
+            },
+            {
+              "Type": "GetRecord"
+            },
+            {
+              "Type": "AddRecord"
+            },
+            {
+              "Type": "UpdateRecord"
+            },
+            {
+              "Type": "DeleteRecord"
+            }
+          ]
+        },
+        {
+          "Name": "Item",
+          "Plural": "Items",
+          "Properties": [
+            {
+              "Name": "Name",
+              "Type": "string",
+              "CanFilter": true,
+              "CanSort": true
+            },
+            {
+              "Name": "Description",
+              "Type": "string"
+            },
+            {
+              "Name": "ProjectId",
+              "Type": "Guid?",
+              "ForeignEntityName": "Project",
+              "ForeignEntityPlural": "Projects",
+              "CanFilter": true,
+              "CanSort": true
+            }
+          ],
+          "Features": [
+            {
+              "Type": "GetList"
+            },
+            {
+              "Type": "GetRecord"
+            },
+            {
+              "Type": "AddRecord"
+            },
+            {
+              "Type": "UpdateRecord"
+            },
+            {
+              "Type": "DeleteRecord"
+            }
+          ]
+        },
+        {
+          "Name": "Employee",
+          "Plural": "Employees",
+          "Properties": [
+            {
+              "Name": "Name",
+              "Type": "string",
+              "CanFilter": true,
+              "CanSort": true
+            },
+            {
+              "Name": "Salary",
+              "Type": "int",
+              "CanFilter": true,
+              "CanSort": true
+            },
+            {
+              "Name": "Designation",
+              "Type": "string"
+            },
+            {
+              "Name": "EmployeeId",
+              "Type": "Guid?",
+              "ForeignEntityName": "User",
+              "ForeignEntityPlural": "Users",
+              "IsRequired": true,
+              "CanFilter": true,
+              "CanSort": true
+            }
+          ],
+          "Features": [
+            {
+              "Type": "GetList"
+            },
+            {
+              "Type": "GetRecord"
+            },
+            {
+              "Type": "AddRecord"
+            },
+            {
+              "Type": "UpdateRecord"
+            },
+            {
+              "Type": "DeleteRecord"
+            }
+          ]
+        }
+      ],
+      "SwaggerConfig": {
+        "Title": "Employee Management System",
+        "Description": "Our API uses a REST based design, leverages the JSON data format, and relies upon HTTPS for transport. We respond with meaningful HTTP response codes and if an error occurs, we include error details in the response body. API Documentation is at carbonkitchen.com/dev/docs",
+        "ApiContact": {
+          "Name": "Employee Management System",
+          "Email": "devsupport@ems.com",
+          "Url": "https://www.ems.com"
+        }
+      }
+    }
+  ]
+}

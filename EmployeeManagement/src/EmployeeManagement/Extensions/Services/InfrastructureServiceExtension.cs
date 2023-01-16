@@ -15,7 +15,7 @@ public static class ServiceRegistration
         {
             // this makes local migrations easier to manage. feel free to refactor if desired.
             connectionString = env.IsDevelopment() 
-                ? "Data Source=localhost,53535;Integrated Security=False;Database=dev_employeemanagement;User ID=SA;Password=#localDockerPassword#"
+                ? "Server=ANIKSARKER\\SQLEXPRESS;Database=EmployeeManagement;Trusted_Connection=True;"
                 : throw new Exception("DB_CONNECTION_STRING environment variable is not set.");
         }
 
